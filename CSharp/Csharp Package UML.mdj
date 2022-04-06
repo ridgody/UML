@@ -19,6 +19,149 @@
 					},
 					"name": "Main",
 					"defaultDiagram": true
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAF//flKIdgSLbk=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "System",
+					"ownedElements": [
+						{
+							"_type": "UMLPackage",
+							"_id": "AAAAAAF//fwqRtgsOdo=",
+							"_parent": {
+								"$ref": "AAAAAAF//flKIdgSLbk="
+							},
+							"name": "Collections",
+							"ownedElements": [
+								{
+									"_type": "UMLPackage",
+									"_id": "AAAAAAF//f0VIdgysH8=",
+									"_parent": {
+										"$ref": "AAAAAAF//fwqRtgsOdo="
+									},
+									"name": "Generic "
+								},
+								{
+									"_type": "UMLInterface",
+									"_id": "AAAAAAF//f9kLdhMBKg=",
+									"_parent": {
+										"$ref": "AAAAAAF//fwqRtgsOdo="
+									},
+									"name": "IEnumerable",
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAF//gBEHdhQMms=",
+											"_parent": {
+												"$ref": "AAAAAAF//f9kLdhMBKg="
+											},
+											"name": "GetEnumerator",
+											"specification": "IEnumerator"
+										}
+									]
+								},
+								{
+									"_type": "UMLInterface",
+									"_id": "AAAAAAF//gE84NhUIzs=",
+									"_parent": {
+										"$ref": "AAAAAAF//fwqRtgsOdo="
+									},
+									"name": "IEnumerator",
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAF//gO91difuw8=",
+											"_parent": {
+												"$ref": "AAAAAAF//gE84NhUIzs="
+											},
+											"name": "MoveNext",
+											"specification": "bool MoveNext()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAF//gPMpNii8G8=",
+											"_parent": {
+												"$ref": "AAAAAAF//gE84NhUIzs="
+											},
+											"name": "Current"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAF//gPe9Nil5Jc=",
+											"_parent": {
+												"$ref": "AAAAAAF//gE84NhUIzs="
+											},
+											"name": "Reset"
+										}
+									]
+								},
+								{
+									"_type": "UMLInterface",
+									"_id": "AAAAAAF//hFoV9iwd/E=",
+									"_parent": {
+										"$ref": "AAAAAAF//fwqRtgsOdo="
+									},
+									"name": "ICollection",
+									"attributes": [
+										{
+											"_type": "UMLAttribute",
+											"_id": "AAAAAAF//hLD0di5J30=",
+											"_parent": {
+												"$ref": "AAAAAAF//hFoV9iwd/E="
+											},
+											"name": "Count",
+											"type": "int",
+											"isReadOnly": true
+										},
+										{
+											"_type": "UMLAttribute",
+											"_id": "AAAAAAF//hQ5Zti/mxY=",
+											"_parent": {
+												"$ref": "AAAAAAF//hFoV9iwd/E="
+											},
+											"name": "SyncRoot",
+											"type": {
+												"$ref": "AAAAAAF//g2L5NisjMo="
+											},
+											"isReadOnly": true
+										},
+										{
+											"_type": "UMLAttribute",
+											"_id": "AAAAAAF//hStk9jFA/k=",
+											"_parent": {
+												"$ref": "AAAAAAF//hFoV9iwd/E="
+											},
+											"name": "IsSynchronized",
+											"type": "bool",
+											"isReadOnly": true
+										}
+									],
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAF//hJeFNi0heg=",
+											"_parent": {
+												"$ref": "AAAAAAF//hFoV9iwd/E="
+											},
+											"name": "CopyTo",
+											"specification": "void CopyTo(Array array, int index)"
+										}
+									]
+								}
+							]
+						},
+						{
+							"_type": "UMLClass",
+							"_id": "AAAAAAF//g2L5NisjMo=",
+							"_parent": {
+								"$ref": "AAAAAAF//flKIdgSLbk="
+							},
+							"name": "Object"
+						}
+					]
 				}
 			]
 		}
